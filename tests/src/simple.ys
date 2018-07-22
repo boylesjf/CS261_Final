@@ -1,0 +1,24 @@
+.pos 0 code
+    jmp _start
+
+.pos 0x100 code
+_start:
+    irmovq _stack, %rsp
+    call main
+    halt
+
+main:
+    irmovq  $2 , %rax
+    irmovq  $-10, %rcx
+    addq    %rcx, %rax
+    xorq    %rax, %rax
+    irmovq  $0x7fffffffffffffff , %rax  # MAX_INT
+    irmovq  $1 , %rcx
+    addq    %rcx,  %rax                 # Positive Overflow
+    irmovq  $0x8000000000000000 , %rax  # MIN_INT
+    subq    %rcx, %rax                  # Negative Overflow    
+    
+    ret
+
+.pos 0xf00 stack
+_stack:

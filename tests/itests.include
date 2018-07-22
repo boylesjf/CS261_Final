@@ -1,0 +1,26 @@
+# list of integration tests
+#  format: run_test <TAG> <ARGS>
+#    <TAG>      used as the root for all filenames (i.e., "expected/$TAG.txt")
+#    <ARGS>     command-line arguments to test
+
+run_test    C_help                  "-h"
+run_test    C_nop_hlt               "-e inputs/nop_hlt.o"
+run_test    C_nop_hlt_debug         "-E inputs/nop_hlt.o"
+run_test    C_irmovq                "-e inputs/irmovq.o"
+run_test    C_irmovq_debug          "-E inputs/irmovq.o"
+run_test    C_opq                   "-e inputs/opq.o"
+run_test    C_opq_debug             "-E inputs/opq.o"
+run_test    B_pushpop               "-e inputs/pushpop.o"
+run_test    B_pushpop_debug         "-E inputs/pushpop.o"
+run_test    B_memreg                "-e inputs/memreg.o"
+run_test    B_memreg_debug          "-E inputs/memreg.o"
+run_test    A_simple                "-e inputs/simple.o"
+run_test    A_simple_entry          "-e inputs/simple_entry.o"
+run_test    A_cmov_debug            "-E inputs/cmov.o"
+run_test    A_func_debug            "-E inputs/func.o"
+run_test    A_opq_of_debug          "-E inputs/opq_of.o"
+run_test    A_movflags_debug        "-E inputs/movflags.o"
+run_test    A_pushpop_rsp_debug     "-E inputs/pushpop_rsp.o"
+run_test    A_bad_addr_debug        "-E inputs/bad_addr.o"
+run_test    A_bad_nostack           "-e inputs/bad_nostack.o"
+

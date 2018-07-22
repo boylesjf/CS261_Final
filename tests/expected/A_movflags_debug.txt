@@ -1,0 +1,124 @@
+Beginning execution at 0x0100
+Y86 CPU state:
+  %rip: 0000000000000100   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000000
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0xf00, %rsp
+Y86 CPU state:
+  %rip: 000000000000010a   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000000
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x0, %rax
+Y86 CPU state:
+  %rip: 0000000000000114   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000000
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x200, %rbx
+Y86 CPU state:
+  %rip: 000000000000011e   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: rmmovq %rax, 0x0(%rbx)
+Memory write to 0x0200: 0x0
+Y86 CPU state:
+  %rip: 0000000000000128   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: mrmovq 0x0(%rbx), %rcx
+Y86 CPU state:
+  %rip: 0000000000000132   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: pushq %rax
+Memory write to 0x0ef8: 0x0
+Y86 CPU state:
+  %rip: 0000000000000134   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000ef8    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: popq %rdx
+Y86 CPU state:
+  %rip: 0000000000000136   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0xffffffffffffffff, %rax
+Y86 CPU state:
+  %rip: 0000000000000140   flags: Z0 S0 O0     AOK
+  %rax: ffffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x200, %rbx
+Y86 CPU state:
+  %rip: 000000000000014a   flags: Z0 S0 O0     AOK
+  %rax: ffffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: rmmovq %rax, 0x0(%rbx)
+Memory write to 0x0200: 0xffffffffffffffff
+Y86 CPU state:
+  %rip: 0000000000000154   flags: Z0 S0 O0     AOK
+  %rax: ffffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: mrmovq 0x0(%rbx), %rcx
+Y86 CPU state:
+  %rip: 000000000000015e   flags: Z0 S0 O0     AOK
+  %rax: ffffffffffffffff    %rcx: ffffffffffffffff
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: pushq %rax
+Memory write to 0x0ef8: 0xffffffffffffffff
+Y86 CPU state:
+  %rip: 0000000000000160   flags: Z0 S0 O0     AOK
+  %rax: ffffffffffffffff    %rcx: ffffffffffffffff
+  %rdx: 0000000000000000    %rbx: 0000000000000200
+  %rsp: 0000000000000ef8    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: popq %rdx
+Y86 CPU state:
+  %rip: 0000000000000162   flags: Z0 S0 O0     AOK
+  %rax: ffffffffffffffff    %rcx: ffffffffffffffff
+  %rdx: ffffffffffffffff    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: halt
+Y86 CPU state:
+  %rip: 0000000000000000   flags: Z0 S0 O0     HLT
+  %rax: ffffffffffffffff    %rcx: ffffffffffffffff
+  %rdx: ffffffffffffffff    %rbx: 0000000000000200
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+Total execution count: 14

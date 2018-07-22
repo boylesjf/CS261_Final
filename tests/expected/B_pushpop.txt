@@ -1,0 +1,10 @@
+Beginning execution at 0x0100
+Memory write to 0x0ef8: 0x1
+Memory write to 0x0ef0: 0x123456789abcdef
+Y86 CPU state:
+  %rip: 0000000000000000   flags: Z0 S0 O0     HLT
+  %rax: 0000000000000001    %rcx: 0123456789abcdef
+  %rdx: 0000000000000001    %rbx: 0123456789abcdef
+  %rsp: 0000000000000f00    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+Total execution count: 8

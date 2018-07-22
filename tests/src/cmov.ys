@@ -1,0 +1,53 @@
+.pos 0 code
+    jmp _start
+
+.pos 0x100 code
+_start:
+    irmovq $5, %rax
+    irmovq $10, %rbx
+    rrmovq %rbx, %rcx
+
+    irmovq $5, %rax
+    subq %rbx, %rax
+    cmovne %rcx, %rdx
+    irmovq $5, %rax
+    subq %rbx, %rax
+    cmovl %rcx, %rdx
+    irmovq $5, %rax
+    subq %rbx, %rax
+    cmovle %rcx, %rdx
+
+    irmovq $5, %rax
+    subq %rbx, %rax
+    cmove %rcx, %rdi
+    irmovq $5, %rax
+    subq %rbx, %rax
+    cmovg %rcx, %rdi
+    irmovq $5, %rax
+    subq %rbx, %rax
+    cmovge %rcx, %rdi
+
+    irmovq $0, %rcx
+
+    irmovq $15, %rax
+    subq %rbx, %rax
+    cmovne %rcx, %rdi
+    irmovq $15, %rax
+    subq %rbx, %rax
+    cmovl %rcx, %rdi
+    irmovq $15, %rax
+    subq %rbx, %rax
+    cmovle %rcx, %rdi
+
+    irmovq $15, %rax
+    subq %rbx, %rax
+    cmove %rcx, %rdx
+    irmovq $15, %rax
+    subq %rbx, %rax
+    cmovg %rcx, %rdx
+    irmovq $15, %rax
+    subq %rbx, %rax
+    cmovge %rcx, %rdx
+
+
+    halt

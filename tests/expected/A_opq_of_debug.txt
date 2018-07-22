@@ -1,0 +1,96 @@
+Beginning execution at 0x0100
+Y86 CPU state:
+  %rip: 0000000000000100   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000000
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x1, %rbx
+Y86 CPU state:
+  %rip: 000000000000010a   flags: Z0 S0 O0     AOK
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000001
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x7fffffffffffffff, %rax
+Y86 CPU state:
+  %rip: 0000000000000114   flags: Z0 S0 O0     AOK
+  %rax: 7fffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000001
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: add %rbx, %rax
+Y86 CPU state:
+  %rip: 0000000000000116   flags: Z0 S1 O1     AOK
+  %rax: 8000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000001
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x8000000000000000, %rax
+Y86 CPU state:
+  %rip: 0000000000000120   flags: Z0 S1 O1     AOK
+  %rax: 8000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000001
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: sub %rbx, %rax
+Y86 CPU state:
+  %rip: 0000000000000122   flags: Z0 S0 O1     AOK
+  %rax: 7fffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000001
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0xffffffffffffffff, %rbx
+Y86 CPU state:
+  %rip: 000000000000012c   flags: Z0 S0 O1     AOK
+  %rax: 7fffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: ffffffffffffffff
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x8000000000000000, %rax
+Y86 CPU state:
+  %rip: 0000000000000136   flags: Z0 S0 O1     AOK
+  %rax: 8000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: ffffffffffffffff
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: add %rbx, %rax
+Y86 CPU state:
+  %rip: 0000000000000138   flags: Z0 S0 O1     AOK
+  %rax: 7fffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: ffffffffffffffff
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: irmovq 0x7fffffffffffffff, %rax
+Y86 CPU state:
+  %rip: 0000000000000142   flags: Z0 S0 O1     AOK
+  %rax: 7fffffffffffffff    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: ffffffffffffffff
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: sub %rbx, %rax
+Y86 CPU state:
+  %rip: 0000000000000144   flags: Z0 S1 O1     AOK
+  %rax: 8000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: ffffffffffffffff
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+
+Executing: halt
+Y86 CPU state:
+  %rip: 0000000000000000   flags: Z0 S0 O0     HLT
+  %rax: 8000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: ffffffffffffffff
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000000    %rdi: 0000000000000000
+Total execution count: 11
